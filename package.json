@@ -6,6 +6,7 @@
   "scripts": {
     "test": "node indes.js"
   },
+  "keywords": ["html","pdf","nodejs","html-converter","pdf-generator"],
   "author": "vikas.xo",
   "license": "ISC",
   "dependencies": {
