@@ -37,7 +37,28 @@ If you're using it as a standalone package, install it via NPM:
 bash
 Copy
 npm install html-to-pdf-exporter
+you just have to import convertHTMLTOPDF from "html-pdf-converter-node"
 
+const convertHTMLTOPDF = require("html-pdf-converter-node")
+let htmlContent = `<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>`
+    const onSuccess = async (url) => {
+     console.log(url)
+// here you will get pdf url and it will be saved in your provided path.
+    };
+    const onError = async (error) => {
+      console.error("Error generating PDF:", error);
+     // here you will get error while processing html to pdf.
+    };
+const pdfResponse = await convertHTMLTOPDF(htmlContent,"fileName","folder",onSuccess,onError)
 
 1. Create a .env file
 At the root of your project, create a .env file to define the URL where the generated PDFs will be accessible.
