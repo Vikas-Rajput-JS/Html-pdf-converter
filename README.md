@@ -26,7 +26,7 @@ If you're using it as a standalone package, install it via NPM:
 npm install html-to-pdf-exporter
 
 you just have to import convertHTMLTOPDF from "html-pdf-converter-node"
-```
+```bash
 const convertHTMLTOPDF = require("html-pdf-converter-node")
 let htmlContent = `<!DOCTYPE html>
 <html>
@@ -40,8 +40,8 @@ let htmlContent = `<!DOCTYPE html>
 </html>`
 
 ```
-```
-onst onSuccess = async (url) => {
+```bash
+const onSuccess = async (url) => {
 console.log(url)
 // here you will get pdf url and it will be saved in your provided path.
     };
