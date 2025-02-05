@@ -1,0 +1,16 @@
+{
+  "name": "html-pdf-converter",
+  "version": "1.0.0",
+  "description": "you can use this package to convert html into pdf,you have to pass html,fileName,onSuccess and onError params, onSuccess,you will get file url and onError,you will get error if any occur while creating pdf.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node indes.js"
+  },
+  "author": "vikas.xo",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "html-pdf-node": "^1.0.8",
+    "path": "^0.12.7"
+  }
+}
