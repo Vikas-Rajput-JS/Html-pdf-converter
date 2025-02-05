@@ -1,6 +1,6 @@
 {
   "name": "html-pdf-converter-node",
-  "version": "1.0.0",
+  "version": "2.1.1",
   "description": "you can use this package to convert html into pdf,you have to pass html,fileName,onSuccess and onError params, onSuccess,you will get file url and onError,you will get error if any occur while creating pdf.",
   "main": "index.js",
   "scripts": {
