@@ -4,17 +4,6 @@ A simple Node.js package that converts HTML content to a PDF and saves it to a s
 
 ---
 
-## Table of Contents
-
-1. [Installation](#installation)
-2. [Setup](#setup)
-3. [Usage](#usage)
-   - [Function Signature](#function-signature)
-   - [Example](#example)
-4. [Environment Variables](#environment-variables)
-5. [Folder Setup](#folder-setup)
-6. [Error Handling](#error-handling)
-7. [License](#license)
 
 ---
 
@@ -33,12 +22,11 @@ npm install html-pdf-node dotenv
 
 2. Install the package
 If you're using it as a standalone package, install it via NPM:
-
-bash
-Copy
+```
 npm install html-to-pdf-exporter
-you just have to import convertHTMLTOPDF from "html-pdf-converter-node"
 
+you just have to import convertHTMLTOPDF from "html-pdf-converter-node"
+```
 const convertHTMLTOPDF = require("html-pdf-converter-node")
 let htmlContent = `<!DOCTYPE html>
 <html>
@@ -50,15 +38,19 @@ let htmlContent = `<!DOCTYPE html>
 
 </body>
 </html>`
-    const onSuccess = async (url) => {
-     console.log(url)
+
+```
+```
+onst onSuccess = async (url) => {
+console.log(url)
 // here you will get pdf url and it will be saved in your provided path.
     };
-    const onError = async (error) => {
-      console.error("Error generating PDF:", error);
+const onError = async (error) => {
+console.error("Error generating PDF:", error);
      // here you will get error while processing html to pdf.
-    };
+};
 const pdfResponse = await convertHTMLTOPDF(htmlContent,"fileName","folder",onSuccess,onError)
+```
 
 1. Create a .env file
 At the root of your project, create a .env file to define the URL where the generated PDFs will be accessible.
